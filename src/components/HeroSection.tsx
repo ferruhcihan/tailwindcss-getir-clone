@@ -66,9 +66,15 @@ const HeroSection = () => {
               onSelect={(code) => setSelected(code)}
               className="flag-select"
             />
-            <div className="flex-1">
-              <input className="h-14 px-4 border-2 border-gray-200 rounded w-full transition-colors hover:border-primary-brand-color focus:border-primary-brand-color outline-none" />
-            </div>
+            <label className="relative flex-1 block">
+              <input
+                required
+                className="h-full rounded px-4 pt-2 hover:border-primary-brand-color focus:border-primary-brand-color transition-colors outline-none text-sm w-full border-2 border-gray-200 peer"
+              />
+              <span className="absolute top-0 left-0 h-full flex items-center px-4 text-sm text-gray-500 transition-all group-focus-within:h-7 group-focus-within:text-xs group-focus-within:text-primary-brand-color peer-valid:h-7 peer-valid:text-xs peer-valid:text-primary-brand-color">
+                Telefon Numarası
+              </span>
+            </label>
           </div>
         </div>
       </div>
