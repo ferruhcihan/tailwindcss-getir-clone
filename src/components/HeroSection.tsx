@@ -57,7 +57,7 @@ const HeroSection = () => {
           <h4 className="text-primary-brand-color text-center font-semibold mb-4">
             Giriş yap veya kayıt ol
           </h4>
-          <div className="flex">
+          <div className="flex gap-x-2">
             {/* @ts-ignore */}
             <ReactFlagsSelect
               countries={Object.keys(flags)}
@@ -66,6 +66,9 @@ const HeroSection = () => {
               onSelect={(code) => setSelected(code)}
               className="flag-select"
             />
+            <div className="flex-1">
+              <input className="h-14 px-4 border-2 border-gray-200 rounded w-full transition-colors hover:border-primary-brand-color focus:border-primary-brand-color outline-none" />
+            </div>
           </div>
         </div>
       </div>
