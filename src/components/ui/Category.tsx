@@ -15,7 +15,7 @@ const Category = ({ category: { id, title, image } }: ICategory) => {
         alt={title}
         className="w-12 h-12 rounded border border-gray-200"
       />
-      <span className="text-sm font-semibold text-gray-700 group-hover:text-brand-color tracking-tight">
+      <span className="text-sm font-semibold text-gray-700 whitespace-nowrap group-hover:text-brand-color tracking-tight">
         {title}
       </span>
     </a>
